@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mealtips</title>
 </head>
 
 <header>
-    <img src="images/Logo_36.svg" alt="logo">
+    <img class="header_logo" src="images/Logo_36.svg" alt="logo" />
+    <!-- <div class="header_utilisateur">
+        <img class="photo_utilisateur" src="images/utilisateur.jpg" alt="utilisateur">
+        <h3>Super Utilisateur</h3>
+    </div> -->
+    <div>
+        <img class="logo_interaction" src="images/tag-outline.svg" alt="favorites">
+        <img class="logo_interaction" src="images/message_writing.svg" alt="notifications">
+        <img class="logo_interaction" src="images/user_circle.svg" alt="profil">
+    </div>
 </header>
 
 <body>
-    <h1>Mealtips App</h1>
-    <h2>BLABLALBA</h2>
+    <nav class="onglet">
+        <div class="onglet_style onglet_toggled">
+            <a href="index.html">Conseil</a>
+        </div>
+        <div class="onglet_style">
+            <a href="index_inspiration.html">Inspiration</a>
+        </div>
+    </nav>
+
+    <form>
+        <input class="recherche" type="text" value="ex : spécialiste, ville, département...">
+        <button><img src="images/search.svg" alt="search"></button>
+        <button><img src="images/filtre.svg" alt="filtre"></button>
+    </form>
+
+    <section class="onglet_content">
+        <div class="card_diet">
+            <img class="photo_diet" src="images/dieteticien2.jpg" alt="photo professionnel" />
+            <div class="card_diet_text">
+                <h3>Lucien Prado</h3>
+                <p>Diététicien, spécialisé en athlètes</p>
+            </div>
+        </div>
+        <div class="card_diet">
+            <img class="photo_diet" src="images/dieteticienne1.jpg" alt="photo professionnel" />
+            <div class="card_diet_text">
+                <h3>Lucien Prado</h3>
+                <p>Psychologue, spécialiste en troubles alimentaires</p>
+            </div>
+        </div>
+        <div class="card_diet">
+            <img class="photo_diet" src="images/dieteticienne2.jpg" alt="photo professionnel" />
+            <div class="card_diet_text">
+                <h3>Lucien Prado</h3>
+                <p>Nutritionniste, spécialisé en alimentation végétalienne (vegan)</p>
+            </div>
+        </div>
+        <div class="card_diet">
+            <img class="photo_diet" src="images/dieteticien1.jpeg" alt="photo professionnel" />
+            <div class="card_diet_text">
+                <h3>Lucien Prado</h3>
+                <p>Nutritionniste, spécialisé en allergies / intolérances alimentaires</p>
+            </div>
+        </div>
+    </section>
 </body>
+
+<footer>
+    <div class="footer_network">
+        <p>Suivez-nous</p>
+        <ul class="footer_network_list">
+            <li><img src="images/instagram.svg" alt="Instagram"></li>
+            <li><img src="images/facebook.svg" alt="Facebook"></li>
+            <li><img src="images/twitter.svg" alt="Twitter"></li>
+            <li><img src="images/snapchat.svg" alt="Snapchat"></li>
+            <li><img src="images/LinkedIn.svg" alt="LinkedIn"></li>
+        </ul>
+    </div>
+    <ul class="footer_about_list">
+        <li><p>Home</p></li>
+        <li><p>Services</p></li>
+        <li><p>About</p></li>
+        <li><p>Terms</p></li>
+        <li><p>Privacy Policy</p></li>
+    </ul>
+    <p>Mealtips © 2021</p>
+</footer>
+
 </html>
