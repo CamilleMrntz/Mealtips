@@ -23,50 +23,145 @@
 </header>
 
 <body>
-    <nav class="onglet">
+    <nav>
         <div class="onglet_style onglet_toggled">
-            <a href="index.html">Conseil</a>
+            <a href="index.html">Les praticiens</a>
         </div>
         <div class="onglet_style">
-            <a href="index_inspiration.html">Inspiration</a>
+            <a href="index_inspiration.html">Les recettes</a>
         </div>
     </nav>
 
-    <form>
-        <input class="recherche" type="text" value="ex : spécialiste, ville, département...">
+    <h2>Les praticiens</h2>
+
+    <form class="search_classic">
+        <input class="search" type="text" value="ex : spécialiste, ville, département...">
         <button><img src="images/search.svg" alt="search"></button>
         <button><img src="images/filtre.svg" alt="filtre"></button>
     </form>
 
-    <section class="onglet_content">
-        <div class="card_diet">
-            <img class="photo_diet" src="images/dieteticien2.jpg" alt="photo professionnel" />
-            <div class="card_diet_text">
-                <h3>Lucien Prado</h3>
-                <p>Diététicien, spécialisé en athlètes</p>
+    <form class="search_praticien">
+        <input class="search" type="text" value="ex : spécialiste, ville, département...">
+        <button><img src="images/search.svg" alt="search"></button>
+        <button><img src="images/filtre.svg" alt="filtre"></button>
+    </form>
+
+    <section class="onglet_content onglet_conseil">
+        <div class="onglet_conseil_allCards">
+            <div class="cards_diet4">
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticien2.jpg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Diététicien, spécialisé en athlètes</p>
+                    </div>
+                </div>
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticienne1.jpg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Psychologue, spécialiste en troubles alimentaires</p>
+                    </div>
+                </div>
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticienne2.jpg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Nutritionniste, spécialisé en alimentation végétalienne (vegan)</p>
+                    </div>
+                </div>
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticien1.jpeg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Nutritionniste, spécialisé en allergies / intolérances alimentaires</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_diet4">
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticien2.jpg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Diététicien, spécialisé en athlètes</p>
+                    </div>
+                </div>
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticienne1.jpg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Psychologue, spécialiste en troubles alimentaires</p>
+                    </div>
+                </div>
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticienne2.jpg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Nutritionniste, spécialisé en alimentation végétalienne (vegan)</p>
+                    </div>
+                </div>
+                <div class="card_diet">
+                    <img class="photo_diet" src="images/dieteticien1.jpeg" alt="photo professionnel" />
+                    <div class="card_diet_text">
+                        <h3>Lucien Prado</h3>
+                        <p>Nutritionniste, spécialisé en allergies / intolérances alimentaires</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card_diet">
-            <img class="photo_diet" src="images/dieteticienne1.jpg" alt="photo professionnel" />
-            <div class="card_diet_text">
-                <h3>Lucien Prado</h3>
-                <p>Psychologue, spécialiste en troubles alimentaires</p>
+
+        <a href="#">Afficher plus de résultats</a>
+    </section>
+
+    <h2>Les recettes</h2>
+
+    <form class="search_recette">
+        <input class="search" type="text" value="ex : poulet, toast, vegan...">
+        <button><img src="images/search.svg" alt="search"></button>
+        <button><img src="images/filtre.svg" alt="filtre"></button>
+    </form>
+
+    <section class="onglet_content onglet_inspiration">
+        <article>
+            <div class="card_diet">
+                <img class="photo_diet" src="images/dieteticienne1.jpg" alt="photo professionnel">
+                <div class="card_diet_text">
+                    <h4>Lucien Prado</h4>
+                    <p>Diététicien, spécialisé en athlètes</p>
+                </div>
             </div>
-        </div>
-        <div class="card_diet">
-            <img class="photo_diet" src="images/dieteticienne2.jpg" alt="photo professionnel" />
-            <div class="card_diet_text">
-                <h3>Lucien Prado</h3>
-                <p>Nutritionniste, spécialisé en alimentation végétalienne (vegan)</p>
+            <div class="card_article">
+                <img class="photo_recette" src="images/plat1.jpg" alt="recette toast avocats-oeufs">
+                <div class="card_article_text">
+                    <h3>Manger sainement</h3>
+                    <p>L'avocado toast ou tartine d'avocat à l'oeuf poché, un grand classique du brunch du dimanche !
+                    </p>
+                    <div class="card_article_footer">
+                        <p>06.15.2021</p>
+                        <p>15:45</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card_diet">
-            <img class="photo_diet" src="images/dieteticien1.jpeg" alt="photo professionnel" />
-            <div class="card_diet_text">
-                <h3>Lucien Prado</h3>
-                <p>Nutritionniste, spécialisé en allergies / intolérances alimentaires</p>
+        </article>
+        <article>
+            <div class="card_diet">
+                <img class="photo_diet" src="images/dieteticienne1.jpg" alt="photo professionnel">
+                <div class="card_diet_text">
+                    <h4>Lucien Prado</h4>
+                    <p>Diététicien, spécialisé en athlètes</p>
+                </div>
             </div>
-        </div>
+            <div class="card_article">
+                <img class="photo_recette" src="images/plat1.jpg" alt="recette toast avocats-oeufs">
+                <div class="card_article_text">
+                    <h3>Manger sainement</h3>
+                    <p>L'avocado toast ou tartine d'avocat à l'oeuf poché, un grand classique du brunch du dimanche !
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <a href="#">Afficher plus de résultats</a>
     </section>
 </body>
 
@@ -82,11 +177,11 @@
         </ul>
     </div>
     <ul class="footer_about_list">
-        <li><p>Home</p></li>
-        <li><p>Services</p></li>
-        <li><p>About</p></li>
-        <li><p>Terms</p></li>
-        <li><p>Privacy Policy</p></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
     </ul>
     <p>Mealtips © 2021</p>
 </footer>

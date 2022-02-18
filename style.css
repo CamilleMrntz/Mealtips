@@ -154,12 +154,9 @@ body {
 /* Nav */
 
 nav {
-  margin: .625rem 1.25rem ;
-}
-
-.onglet {
   display: flex;
   justify-content: center;
+  margin: 0.625rem 1.25rem;
 }
 
 .onglet_style {
@@ -184,15 +181,19 @@ nav {
   color: #357377;
 }
 
-/* Search barre */
-
-form {
-  display: flex;
-  justify-content: center;
-  margin-block: .625rem;
+h2 {
+    display: none;
 }
 
-.recherche {
+/* Search barre */
+
+.search_classic {
+  display: flex;
+  justify-content: center;
+  margin-block: 0.625rem;
+}
+
+.search {
   margin: 0.625rem;
   padding: 0.625rem 0.4375rem;
   border-radius: 45px;
@@ -200,6 +201,14 @@ form {
   color: #c8d5d6;
   font-style: italic;
   width: 60%;
+}
+
+.search_praticien {
+    display: none;
+}
+
+.search_recette {
+    display: none;
 }
 
 button {
@@ -224,8 +233,19 @@ button:hover {
   flex-direction: column;
   gap: 1.25rem;
   align-items: center;
-  /* margin-block: 1.25rem;
-  margin-inline: 2.5rem; */
+}
+
+.cards_diet4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.onglet_conseil_allCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
 }
 
 p {
@@ -250,14 +270,18 @@ p {
 }
 
 .card_diet_text {
-    width: 13.125rem;
-  }
+  width: 13.125rem;
+}
 
-.card_article_footer, .card_diet_text p {
+.card_article_footer,
+.card_diet_text p {
   color: #357377;
   font-style: italic;
 }
 
+section a {
+    margin-block: 1.25rem;
+}
 
 /* Onglet inspiration */
 
@@ -287,38 +311,88 @@ article .card_diet {
   gap: 5px;
 }
 
-h2 {
+h3 {
   font-weight: 500;
 }
 
 .card_article_footer {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.onglet_inspiration {
+  display: none;
 }
 
 /* Footer */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    gap: .625rem;
-    align-items: center;
-    margin-top: 1.25rem;
-    padding-block: 1.25rem;
-    background-color: grey;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding-block: 1.875rem;
+  background-color: #c8d5d6;
+}
+
+.footer_network {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
 }
 
 .footer_network p {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer_network_list {
-    display: flex;
-    gap: .625rem;
+  display: flex;
+  gap: 0.625rem;
 }
 
 .footer_about_list {
-    display: flex;
-    gap: .625rem;
+  display: flex;
+  gap: 0.9375rem;
+}
+
+.footer_about_list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+footer p {
+    margin-block: 1.25rem;
+}
+
+@media (min-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    h2 {
+        display: flex;
+        margin: 20px 30px;
+        padding: 10px 0px;
+        color: #357377;
+        border-bottom: 2px solid #357377;
+    }
+
+    .onglet_conseil_allCards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .onglet_inspiration {
+        display: flex;
+    }
+
+    .search_recette {
+        display: flex;
+        justify-content: center;
+    }
+
 }
