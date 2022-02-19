@@ -140,11 +140,18 @@ header {
 
 .header_logo {
   margin-right: auto;
+}
+
+.header_logo img {
   width: 6.25rem;
 }
 
 .logo_interaction {
   height: 26px;
+}
+
+.header_utilisateur {
+    display: none;
 }
 
 body {
@@ -165,12 +172,12 @@ nav {
   flex-grow: 1;
   flex-basis: 0;
   padding-block: 0.9375rem;
-  border-bottom: 2px solid #c8d5d6;
+  border-bottom: 2px solid #aeb5b6;
 }
 
 .onglet_style a {
   text-decoration: none;
-  color: #c8d5d6;
+  color: #aeb5b6;
 }
 
 .onglet_toggled {
@@ -198,7 +205,7 @@ h2 {
   padding: 0.625rem 0.4375rem;
   border-radius: 45px;
   border: 1px solid #428a60;
-  color: #c8d5d6;
+  color: #aeb5b6;
   font-style: italic;
   width: 60%;
 }
@@ -219,11 +226,12 @@ button {
 }
 
 button img {
-  height: 20px;
+  height: 22px;
 }
 
 button:hover {
-  background-color: #c8d5d6;
+  background-color: #aeb5b6;
+  /* #c8d5d6 */
 }
 
 /* Onglet content : Card diet */
@@ -290,7 +298,7 @@ article {
   flex-direction: column;
   margin-inline: 6.25rem;
   padding-bottom: 15px;
-  border-bottom: 2px solid #c8d5d6;
+  border-bottom: 2px solid #aeb5b6;
   max-width: 21.875rem;
 }
 
@@ -368,6 +376,34 @@ footer p {
 }
 
 @media (min-width: 800px) {
+    .header_logo img {
+        width: 9.375rem;
+    }
+
+    .logo_profil {
+        display: none;
+    }
+
+    header div {
+        display: flex;
+        gap: 10px;
+    }
+
+    header div img {
+        margin-block: auto;
+    }
+
+    .header_utilisateur {
+        display: flex;
+        align-items: center;
+        margin-left: .625rem;
+    }
+
+    .photo_utilisateur {
+        width: 3.75rem;
+        border-radius: 50%;
+    }
+    
     nav {
         display: none;
     }
