@@ -129,7 +129,6 @@ table {
   src: url("fonts/Work_Sans/WorkSans-VariableFont_wght.woff") format("truetype");
 }
 
-
 /* Header */
 
 header {
@@ -152,7 +151,7 @@ header {
 }
 
 .header_utilisateur {
-    display: none;
+  display: none;
 }
 
 body {
@@ -190,7 +189,7 @@ nav {
 }
 
 h2 {
-    display: none;
+  display: none;
 }
 
 /* Search barre */
@@ -212,11 +211,11 @@ h2 {
 }
 
 .search_praticien {
-    display: none;
+  display: none;
 }
 
 .search_recette {
-    display: none;
+  display: none;
 }
 
 button {
@@ -289,7 +288,7 @@ p {
 }
 
 section a {
-    margin-block: 1.25rem;
+  margin-block: 1.25rem;
 }
 
 /* Onglet inspiration */
@@ -374,63 +373,62 @@ footer {
 }
 
 footer p {
-    margin-block: 1.25rem;
+  margin-block: 1.25rem;
 }
 
 @media (min-width: 800px) {
-    .header_logo img {
-        width: 9.375rem;
-    }
+  .header_logo img {
+    width: 9.375rem;
+  }
 
-    .logo_profil {
-        display: none;
-    }
+  .logo_profil {
+    display: none;
+  }
 
-    header div {
-        display: flex;
-        gap: 10px;
-    }
+  header div {
+    display: flex;
+    gap: 10px;
+  }
 
-    header div img {
-        margin-block: auto;
-    }
+  header div img {
+    margin-block: auto;
+  }
 
-    .header_utilisateur {
-        display: flex;
-        align-items: center;
-        margin-left: .625rem;
-    }
+  .header_utilisateur {
+    display: flex;
+    align-items: center;
+    margin-left: 0.625rem;
+  }
 
-    .photo_utilisateur {
-        width: 3.75rem;
-        border-radius: 50%;
-    }
-    
-    nav {
-        display: none;
-    }
+  .photo_utilisateur {
+    width: 3.75rem;
+    border-radius: 50%;
+  }
 
-    h2 {
-        display: flex;
-        margin: 20px 30px;
-        padding: 10px 0px;
-        color: #357377;
-        border-bottom: 2px solid #357377;
-    }
+  nav {
+    display: none;
+  }
 
-    .onglet_conseil_allCards {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  h2 {
+    display: flex;
+    margin: 20px 30px;
+    padding: 10px 0px;
+    color: #357377;
+    border-bottom: 2px solid #357377;
+  }
 
-    .onglet_inspiration {
-        display: flex;
-    }
+  .onglet_conseil_allCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .search_recette {
-        display: flex;
-        justify-content: center;
-    }
+  .onglet_inspiration {
+    display: flex;
+  }
 
+  .search_recette {
+    display: flex;
+    justify-content: center;
+  }
 }
