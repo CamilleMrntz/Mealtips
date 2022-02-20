@@ -402,6 +402,8 @@ footer p {
 
   .photo_utilisateur {
     width: 3.75rem;
+    height: 3.75rem;
+    object-fit: cover;
     border-radius: 50%;
   }
 
