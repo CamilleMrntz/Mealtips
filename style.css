@@ -126,8 +126,9 @@ table {
 
 @font-face {
   font-family: "work_sans";
-  src: url("fonts/Work_Sans/WorkSans-VariableFont_wght.ttf") format("truetype");
+  src: url("fonts/Work_Sans/WorkSans-VariableFont_wght.woff") format("truetype");
 }
+
 
 /* Header */
 
@@ -296,6 +297,7 @@ section a {
 article {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   margin-inline: 6.25rem;
   padding-bottom: 15px;
   border-bottom: 2px solid #aeb5b6;
